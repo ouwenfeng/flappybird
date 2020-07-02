@@ -258,7 +258,7 @@ void GameScene::birdUpAction(float delta)
 		this->unschedule(schedule_selector(GameScene::birdUpAction));
 	}
 	auto birdSprite = this->getChildByName("birdSprite");
-	birdSprite->setPositionY(birdSprite->getPositionY() + downSpeed * 1.0f / 2);
+	birdSprite->setPositionY(birdSprite->getPositionY() + upSpeed * 1.0f);
 }
 
 void GameScene::update(float delta)
